@@ -1,3 +1,6 @@
+/*
+윤성우 열혈 C++ 프로그래밍의 OOP 단계별 프로젝트 1단계를 구현한 코드입니다.
+*/
 #include <iostream>
 #include <cstring>
 

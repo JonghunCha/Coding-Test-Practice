@@ -1,3 +1,7 @@
+/*
+윤성우 열혈 C++ 프로그래밍의 OOP 단계별 프로젝트 4단계를 구현한 코드입니다.
+4단계에서는 코드의 안정성을 높이기 위해 const를 사용할 수 있는 모든 멤버함수를 const로 수정하였다.
+*/
 #include <iostream>
 #include <cstring>
 using namespace std;

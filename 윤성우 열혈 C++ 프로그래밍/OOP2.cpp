@@ -1,3 +1,7 @@
+/*
+윤성우 열혈 C++ 프로그래밍의 OOP 단계별 프로젝트 2단계를 구현한 코드입니다.
+2단계에서는 1단계의 구조체를 클래스로 바꾸어 주었다.(캡슐화, 정보 은닉, 생성자와 소멸자 정의 등등)
+*/
 #include <iostream>
 #include <cstring>
 using namespace std;

@@ -1,3 +1,7 @@
+/*
+윤성우 열혈 C++ 프로그래밍의 OOP 단계별 프로젝트 3단계를 구현한 코드입니다.
+3단계에서는 2단계에서 정의한 클래스에 깊은 복사 생성자를 추가하였다.
+*/
 #include <iostream>
 #include <cstring>
 using namespace std;
