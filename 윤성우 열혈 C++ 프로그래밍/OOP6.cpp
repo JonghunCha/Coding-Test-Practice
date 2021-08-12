@@ -146,7 +146,7 @@ void AccountHandler::MakeHighCreditAccount(void) {
 	int id, balance, roi, credit_option;
 	char name[100];
 
-	cout << "[보통예금계좌 개설]" << endl;
+	cout << "[신용신뢰계좌 개설]" << endl;
 	cout << "계좌ID : "; cin >> id;
 	cout << "이 름 : "; cin >> name;
 	cout << "입급액 : "; cin >> balance;
