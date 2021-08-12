@@ -107,12 +107,12 @@ private:
 public:
 	AccountHandler();
 	void Make_Account(void);
+	void MakeNormalAccount(void);
+	void MakeHighCreditAccount(void);
 	void Deposit_Money(void);
 	void Withdraw_Money(void);
 	void Print_All_Account(void) const;
 	~AccountHandler();
-	void MakeNormalAccount(void);
-	void MakeHighCreditAccount(void);
 };
 
 AccountHandler::AccountHandler()
