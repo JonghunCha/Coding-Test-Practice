@@ -110,7 +110,7 @@ void Withdraw_Money(void) {
 	int id, money;
 	cout << "계좌ID : ";
 	cin >> id;
-	cout << "입금액 : ";
+	cout << "출금액 : ";
 	cin >> money;
 	for (int i = 0; i < customer_num; i++) {
 		if (account[i]->get_account_id() == id) {
