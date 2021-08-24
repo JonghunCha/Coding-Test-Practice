@@ -22,11 +22,11 @@ String::String(const String& _String) {
 }
 
 String::~String() {
-	if (str != NULL)	delete []str;
+	if (str != NULL)	delete[]str;
 }
 
 String& String::operator=(const String& _String) {
-	if (str != NULL)	delete []str;
+	if (str != NULL)	delete[]str;
 	len = _String.len;
 	str = new char[len];
 	strcpy(str, _String.str);
@@ -38,7 +38,7 @@ String String::operator+(const String& _String) {
 	strcpy(retstr, str);
 	strcat(retstr, _String.str);
 	String ret(retstr);
-	delete []retstr;
+	delete[]retstr;
 	return ret;
 }
 
@@ -47,7 +47,7 @@ String& String::operator+=(const String& _String) {
 	char* retstr = new char[len];
 	strcpy(retstr, str);
 	strcat(retstr, _String.str);
-	if (str != NULL)	delete []str;
+	if (str != NULL)	delete[]str;
 	str = retstr;
 	return *this;
 }
