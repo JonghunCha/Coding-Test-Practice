@@ -1,5 +1,5 @@
 /*
-OOP7의 메인함수
+OOP9의 메인함수
 */
 #include <iostream>
 #include <cstring>
