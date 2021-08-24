@@ -1,7 +1,7 @@
 /*
-String 클래스의 정의 파일
+String 클래스의 정의 파일.
 */
-#include <cstring>
+#include <iostream>
 #include "String.h"
 
 String::String() {
