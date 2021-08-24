@@ -1,5 +1,5 @@
 /*
-String클래스의 선언 파일
+String 클래스의 선언 파일
 */
 #ifndef __STRING_H__
 #define __STRING_H__
