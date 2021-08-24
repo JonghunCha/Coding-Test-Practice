@@ -1,5 +1,5 @@
 /*
-String 클래스의 정의 파일
+String클래스의 정의 파일
 */
 #include <cstring>
 #include "String.h"
