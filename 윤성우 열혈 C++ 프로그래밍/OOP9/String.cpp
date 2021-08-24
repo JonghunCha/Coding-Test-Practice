@@ -1,5 +1,5 @@
-/*
-String Å¬·¡½ºÀÇ Á¤ÀÇ ÆÄÀÏ
+ï»¿/*
+String í´ë˜ìŠ¤ì˜ ì •ì˜ íŒŒì¼
 */
 #include <iostream>
 #include "String.h"
