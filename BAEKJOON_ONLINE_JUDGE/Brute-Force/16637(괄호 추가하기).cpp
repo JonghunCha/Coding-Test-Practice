@@ -8,12 +8,12 @@ using namespace std;
 
 long long answer = -999999999999;
 
-void Get_Answer(const int N, const int nums[10], const char operators[9], int flag[9], int step);			//정답을 도출하는 함수
-void Calculate(const int N, const int nums[10], const char operators[9], int flag[9]);						//괄호의 조합을 마친 후 실질적으로 계산하고 answer값과 비교하는 함수
+void Get_Answer(const int N, const int nums[10], const char operators[9], int flag[9], int step);	//정답을 도출하는 함수
+void Calculate(const int N, const int nums[10], const char operators[9], int flag[9]);	//괄호의 조합을 마친 후 실질적으로 계산하고 answer값과 비교하는 함수
 
 int main(void) {
-	int N, nums[10];		//nums에는 입력값의 정수들을 저장
-	char operators[9];		//operators에는 입력값의 연산자들을 저장
+	int N, nums[10];	//nums에는 입력값의 정수들을 저장
+	char operators[9];	//operators에는 입력값의 연산자들을 저장
 
 	cin >> N;
 
@@ -72,8 +72,8 @@ void Get_Answer(const int N, const int nums[10], const char operators[9], int fl
 }
 
 void Calculate(const int N, const int nums[10], const char operators[9], int flag[9]) {
-	int new_nums[10];								//new_nums에는 괄호 연산을 먼저 한 후 새롭게 만들어진 숫자 순서를 저장
-	char new_operators[9];							//new_operators에는 괄호 연산을 먼저 한 후 남은 연산자들을 순서대로 저장
+	int new_nums[10];	//new_nums에는 괄호 연산을 먼저 한 후 새롭게 만들어진 숫자 순서를 저장
+	char new_operators[9];	//new_operators에는 괄호 연산을 먼저 한 후 남은 연산자들을 순서대로 저장
 	int nums_index = 0, operators_index = 0, temp;	//각각 new_nums와 new_operators의 유의미한 값을 가지는 마지막 요소를 가르킴
 	int ret = 0;
 
