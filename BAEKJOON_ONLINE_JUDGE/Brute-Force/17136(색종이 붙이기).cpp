@@ -63,7 +63,7 @@ void Get_Answer(int map[10][10], int size1, int size2, int size3, int size4, int
 							}
 						}
 						Get_Answer(map, size1, size2, size3, size4, size5, num - 25);
-						//5*5로 덮을 수 있으나 덮지 않는 경우
+						//원래 상태로 복구
 						size5++;
 						for (int a = i; a < i + 5; a++) {
 							for (int b = j; b < j + 5; b++) {
@@ -81,7 +81,7 @@ void Get_Answer(int map[10][10], int size1, int size2, int size3, int size4, int
 							}
 						}
 						Get_Answer(map, size1, size2, size3, size4, size5, num - 16);
-						//4*4로 덮을 수 있으나 덮지 않는 경우
+						//원래 상태로 복구
 						size4++;
 						for (int a = i; a < i + 4; a++) {
 							for (int b = j; b < j + 4; b++) {
@@ -99,7 +99,7 @@ void Get_Answer(int map[10][10], int size1, int size2, int size3, int size4, int
 							}
 						}
 						Get_Answer(map, size1, size2, size3, size4, size5, num - 9);
-						//3*3로 덮을 수 있으나 덮지 않는 경우
+						//원래 상태로 복구
 						size3++;
 						for (int a = i; a < i + 3; a++) {
 							for (int b = j; b < j + 3; b++) {
@@ -117,7 +117,7 @@ void Get_Answer(int map[10][10], int size1, int size2, int size3, int size4, int
 							}
 						}
 						Get_Answer(map, size1, size2, size3, size4, size5, num - 4);
-						//2*2로 덮을 수 있으나 덮지 않는 경우
+						//원래 상태로 복구
 						size2++;
 						for (int a = i; a < i + 2; a++) {
 							for (int b = j; b < j + 2; b++) {
@@ -131,7 +131,7 @@ void Get_Answer(int map[10][10], int size1, int size2, int size3, int size4, int
 						size1--;
 						map[i][j] = 0;
 						Get_Answer(map, size1, size2, size3, size4, size5, num - 1);
-						//1*1로 덮을 수 있으나 덮지 않는 경우
+						//원래 상태로 복구
 						size1++;
 						map[i][j] = 1;
 					}
