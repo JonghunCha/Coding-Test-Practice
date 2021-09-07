@@ -39,6 +39,7 @@ int main(void) {
 //map은 아직 색종이로 덮여있지 않은 부분은 1, 색종이로 덮여진 부분과 덮으면 안되는 부분은 0으로 표시
 //size1~5는 각각 크기별로 남은 색종이의 수를, num은 덮어야 할 1칸의 개수를 의미
 void Get_Answer(int map[10][10], int size1, int size2, int size3, int size4, int size5, int num) {
+	cout << "in get answer" << endl;
 	int attached;
 	//덮어야 할 칸이 없으면 몇 장의 색종이를 사용했는지 계산하고 answer값과 비교, 최신화 한다
 	if (num == 0) {
