@@ -40,7 +40,7 @@ int main(void) {
 //size1~5는 각각 크기별로 남은 색종이의 수를, num은 덮어야 할 1칸의 개수를 의미
 void Get_Answer(int map[10][10], int size1, int size2, int size3, int size4, int size5, int num) {
 	int attached;
-	//덮어야 할 칸이 없으면 몇장의 색종이를 썻는지 계산하고 answer값과 비교, 최신화 한다
+	//덮어야 할 칸이 없으면 몇 장의 색종이를 사용했는지 계산하고 answer값과 비교, 최신화 한다
 	if (num == 0) {
 		attached = 25 - size1 - size2 - size3 - size4 - size5;
 		if (attached < answer)	answer = attached;
