@@ -52,7 +52,7 @@ int main(void) {
 
 	insert(head, 0, 0);	//연결리스트의 0번째에 0삽입
 	insert(head, 1, 1);	//연결리스트의 1번째에 1삽입
-	insert(head, 2, 2); //연결리스트의 2번째에 2삽입
+	insert(head, 2, 2); 	//연결리스트의 2번째에 2삽입
 	printAll(head);		//연결리스트의 모든 노드들의 val값을 순서대로 출력
 	erase(head, 1);		//1번째 노드 삭제
 	printAll(head);		//1번째 노드 삭제되었는지 확인
