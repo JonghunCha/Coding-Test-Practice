@@ -12,9 +12,9 @@ Stack의 여러가지 기능중 top(), pop(), push()기능만 구현하였다.
 int Stack[MAX_SIZE];
 int top_index = -1;
 
-int top();	//스택의 top에 위치한 값을 반환. 스택이 비어있다면 "스택이 비어있습니다"를 출력하고 0을 반환
-int pop();	//스택의 top을 제거하고 1을 반환. 스택이 비어있다면 "스택이 비어있습니다"를 출력하고 0을 반환
-int push(int n);	//스택의 top에 n값을 가진 원소를 추가하고 1을 반환. 스택이 꽉찬 상태면 "스택이 꽉 찼습니다"를 출력하고 0을 반환
+int top();	//스택의 top에 위치한 값을 반환. 스택이 비어있다면 "top() error : 스택이 비어있습니다"를 출력하고 0을 반환
+int pop();	//스택의 top을 제거하고 1을 반환. 스택이 비어있다면 "pop() error : 스택이 비어있습니다"를 출력하고 0을 반환
+int push(int n);	//스택의 top에 n값을 가진 원소를 추가하고 1을 반환. 스택이 꽉찬 상태면 "push() error : 스택이 꽉 찼습니다"를 출력하고 0을 반환
 void printStack();	//스택에 있는 모든 값을 bottom부터 top순으로 출력
 
 int main(void) {
@@ -48,7 +48,7 @@ int main(void) {
 
 int top() {
 	if (top_index == -1) {
-		printf("스택이 비어있습니다\n");
+		printf("top() error : 스택이 비어있습니다\n");
 		return 0;
 	}
 	return Stack[top_index];
@@ -56,7 +56,7 @@ int top() {
 
 int pop() {
 	if (top_index == -1) {
-		printf("스택이 비어있습니다\n");
+		printf("pop() error : 스택이 비어있습니다\n");
 		return 0;
 	}
 	Stack[top_index--] = 0;
@@ -65,7 +65,7 @@ int pop() {
 
 int push(int n) {
 	if (top_index == MAX_SIZE - 1) {
-		printf("스택이 꽉 찼습니다\n");
+		printf("push() error : 스택이 꽉 찼습니다\n");
 		return 0;
 	}
 	Stack[++top_index] = n;
