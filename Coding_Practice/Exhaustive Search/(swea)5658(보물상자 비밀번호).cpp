@@ -1,5 +1,5 @@
 /*
-문제 링크 : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo
+문제 링크 : https://swexpertacademy.com/main/main.do
 단순한 완전탐색 문제다.
 
 회전을 통해 구할 수 있는 모든 수를 구한다. 여기서 중복은 제거해야하기 때문에 set을 이용하였다.

@@ -1,5 +1,5 @@
 /*
-문제 링크 : https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo
+문제 링크 : https://swexpertacademy.com/main/main.do
 완전탐색으로 해결할 수 있는 문제다.
 
 구슬은 최대 4개를 떨어뜨릴 수 있고 폭은 최대 12이다. 따라서 12^4 = 약 2만번의 조합을 다 탐색하고 그 중 가장 벽돌을 적게 남기는 것을 구하면 된다.
