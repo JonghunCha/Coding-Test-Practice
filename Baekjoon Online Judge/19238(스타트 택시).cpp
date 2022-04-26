@@ -68,6 +68,8 @@ int main(void) {
 void Find_Passenger(int map[21][21], int taxi[2], int passenger[21][21], int destination[401][2], int visit[21][21]) {
 	int nx, ny, distance, fuel_use, x, y, candidate_x = -1, candidate_y = -1, candidate_distance = 10000;
 	queue<tuple<int, int, int>> q;
+
+	succeed = true;
 	//현재 택시가 위치한 곳을 큐에 넣는다
 	visit[taxi[0]][taxi[1]] = 1;
 	q.emplace(make_tuple(taxi[0], taxi[1], 0));
